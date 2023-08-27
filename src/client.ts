@@ -22,13 +22,13 @@ const DEFAULT_CIPHERS = [
 	"TLS_AES_256_GCM_SHA384",
 ];
 
-const DEFAULT_USER_AGENT =
-	"RiotClient/62.0.1.4852117.4789131 rso-auth (Windows;10;;Professional, x64)";
+const DEFAULT_USER_AGENT = "ShooterGame/13 Windows/10.0.22621.1.768.64bit";
 
 export const httpClient = axios.create({
 	headers: {
 		"User-Agent": DEFAULT_USER_AGENT,
 		"Content-Type": "application/json",
+		"X-Riot-ClientVersion": "release-07.03-shipping-11-953184",
 	},
 	httpsAgent: new Agent({
 		ciphers: DEFAULT_CIPHERS.join(":"),

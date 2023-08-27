@@ -1,5 +1,3 @@
-import type { AxiosResponse } from "axios";
-
 export type AuthParameters = {
 	uri: string;
 };
